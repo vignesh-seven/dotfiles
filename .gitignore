@@ -1,0 +1,12 @@
+pcmanfm/
+gtk-2.0/
+gtk-3.0/
+htop/
+dconf/
+libfm/
+mimeapps.list
+procps/
+qView/
+systemd/
+vlc/
+yay/

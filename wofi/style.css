@@ -1,0 +1,54 @@
+@import url("/home/vin/.cache/wal/colors-waybar.css");
+
+window {
+	margin: 0px;
+	background-color: @background;
+}
+
+#input {
+	margin: 5px;
+	border: 1px solid mix(@color1, black, 0.5);
+	color: @foreground;
+	background-color: @background;
+	border-radius: 0;
+	
+}
+
+#input > image.left {
+    -gtk-icon-transform:scaleX(0);
+}
+
+
+#inner-box {
+	margin: 5px;
+	border: none;
+	background-color: @background;
+	
+}
+
+#outer-box {
+	margin: 5px;
+	border: none;
+	background-color: @background;
+}
+
+#scroll {
+	margin: 0px;
+	border: none;
+}
+
+#text {
+	margin: 5px;
+	border: none;
+	color: @foreground;
+} 
+
+#entry {
+	padding: 0px 20px;
+	margin: 2px 0px;
+}
+
+#entry:selected {
+	background-color: mix(@color1, black, 0.5);
+}
+
