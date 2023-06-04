@@ -1,7 +1,7 @@
 {
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 25, // Waybar height (to be removed for auto height)
+    // "height": 34, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 0, // Gaps between modules (4px)
     // "fixed-center": false,
@@ -16,9 +16,14 @@
         "all-outputs": true,
         "format": "{icon}",
         "format-icons": {
+        	"1": "",
+        	"2": "",
+        	"3": "",
             "urgent": "",
-            "focused": "",
-            "default": ""
+            "focused": "",
+            "default": "",
+            //"focused": "A",
+            //"default": "A"
         }
     },
     "custom/my-text": {
@@ -103,12 +108,12 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "on-click-right": "exec ~/.config/wofi/wofi-wifi-menu.sh",
+        "on-click-right": "exec ~/.config/rofi/rofi-wifi-menu.sh",
         "format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
+        "format-disconnected": "Disconnected",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
    
