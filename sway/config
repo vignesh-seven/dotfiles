@@ -19,8 +19,11 @@ set $right l
 # Your preferred terminal emulator
 set $term kitty
 
-set $wallpaper /home/vin/wallpapers/selena.png
+set $wallpaper /home/vin/wallpapers/eva.jpg
 exec_always wal -i $wallpaper -e
+
+# set mako colors
+exec_always /home/vin/.config/mako/update-theme.sh
 
 # Your preferred application launcher
 	# wofi
@@ -186,8 +189,9 @@ gaps inner 8px
 # exec wal -i /home/vin/.config/wallpapers/selena_fhd.png
 output "*" bg $wallpaper fill
 
-# bindsym $mod+ exec wal -i $wallpaper
 
+# lauch power menu 
+bindsym $mod+f4 exec ~/.config/rofi/power-menu/powermenu
 
 # import the color pallete
 include "$HOME/.cache/wal/colors-sway"
@@ -195,6 +199,9 @@ include "$HOME/.cache/wal/colors-sway"
 # always floating windows
 for_window [app_id="pavucontrol"] floating enable
 for_window [app_id="system-config-printer"] floating enable
+
+# turn on/off display 
+bindsym $mod+f9 exec wlr-randr --output eDP-1 --toggle
 
 #
 # Status Bar:

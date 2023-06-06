@@ -1,0 +1,21 @@
+font=monospace 11
+
+sort=-time
+layer=overlay
+width=300
+height=110
+
+border-radius=0
+border-size=3
+
+padding=3,15
+
+icons=0
+max-icon-size=64
+default-timeout=5000
+ignore-timeout=1
+
+
+background-color=#55255EC8
+text-color=#b8c4c7
+border-color=#030110EE
