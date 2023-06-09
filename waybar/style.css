@@ -2,9 +2,8 @@
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Hack Nerd Font, sans-serif;
-    
-   /* font-size: 13px;*/
+  font-family: FontAwesome, Fira Sans, Roboto, sans-serif;
+  /* font-size: 12px; */
 }
 
 window#waybar {
@@ -58,7 +57,7 @@ button:hover {
 }
 
 #workspaces button {
-    padding: 0 12px;
+    padding: 0 13px;
     background-color: transparent;
     color: @foreground;
 	font-size: 14px;
@@ -107,7 +106,7 @@ button:hover {
 #mpd {
     padding: 3px 15px;
     color: rgb(220, 220, 220);;
-    font-size: 12px
+    font-size: 13px;
 }
 
 #window,

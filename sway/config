@@ -4,6 +4,11 @@
 #
 # Read `man 5 sway` for a complete reference.
 
+# scaling
+output "*" mode 1920x1080@60Hz
+# output "*" scale 1.1
+
+
 # enable numlock
 input type:keyboard xkb_numlock enabled
 
@@ -199,6 +204,7 @@ include "$HOME/.cache/wal/colors-sway"
 # always floating windows
 for_window [app_id="pavucontrol"] floating enable
 for_window [app_id="system-config-printer"] floating enable
+for_window [app_id="Waydroid"] floating enable
 
 # turn on/off display 
 bindsym $mod+f9 exec wlr-randr --output eDP-1 --toggle
