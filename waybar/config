@@ -7,10 +7,53 @@
     // "fixed-center": false,
     //"mode": "overlay",
     // Choose the order of the modules
+
     "modules-left": ["network", "pulseaudio", "backlight"],
     "modules-center": ["sway/workspaces"],
     "modules-right": [ "cpu", "memory", "battery", "clock", "tray"],
+
     // Modules configuration
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "on-click-right": "exec ~/.config/rofi/rofi-wifi-menu.sh",
+        "format-wifi": "  {essid}" ,
+        "tooltip-format": " {bandwidthDownBytes}  |   {bandwidthUpBytes}",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "No WiFi",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon}  {volume}% ",
+        //"format": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pulseaudio-control togmute",
+        "on-click-right": "pavucontrol"
+        
+    },
+    "backlight": {
+        // "device": "amdgpu_bl0",
+        // "exec":"~/.config/waybar/brightnessctl.sh"
+        "format": "{icon} {percent}%",
+        "format-icons": [" "],
+		"on-scroll-up": "exec brightnessctl set +5%",
+		"on-scroll-down": "exec brightnessctl set 5%-"
+    },
+
+
     "sway/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
@@ -26,11 +69,64 @@
             //"default": "A"
         }
     },
-    "custom/my-text": {
-    	"format": "{}",
-    	"interval": "once",
-    	"exec": "echo AAAAAAAAAAAAAAAAA",
+    "cpu": {
+        "format": "  {usage}%",
+        "tooltip": false
     },
+    "memory": {
+        "format": "  {}%"
+    }, 
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}  {capacity}%",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "clock": {
+        // "timezone": "America/New_York",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     "sway/window": {
         "format": "{title}",
         "max-length": 50
@@ -68,77 +164,9 @@
             "deactivated": ""
         }
     },
-    "tray": {
-        // "icon-size": 21,
-        "spacing": 10
-    },
-    "clock": {
-        // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%I:%M %p}",
-        "format-alt": "{:%Y-%m-%d}"
-    },
-    "cpu": {
-        "format": "{usage}% ",
-        "tooltip": false
-    },
-    "memory": {
-        "format": "{}% "
-    },
-    "backlight": {
-        // "device": "amdgpu_bl0",
-        // "exec":"~/.config/waybar/brightnessctl.sh"
-        "format": "{percent}% {icon}",
-        "format-icons": [" "],
-		"on-scroll-up": "exec brightnessctl set +5%",
-		"on-scroll-down": "exec brightnessctl set 5%-"
-    },
-    "battery": {
-        "states": {
-            // "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
-    },
-    "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "on-click-right": "exec ~/.config/rofi/rofi-wifi-menu.sh",
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    },
-   
-    "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
-        "on-click": "pulseaudio-control togmute",
-        "on-click-right": "pavucontrol"
+
         
-    },
+   
     "custom/media": {
         "format": "{icon} {}",
         "return-type": "json",

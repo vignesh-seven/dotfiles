@@ -2,8 +2,8 @@
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-  font-family: FontAwesome, Fira Sans, Roboto, sans-serif;
-  /* font-size: 12px; */
+    font-family: FontAwesome, Roboto, sans-serif;
+    
 }
 
 window#waybar {
@@ -57,7 +57,7 @@ button:hover {
 }
 
 #workspaces button {
-    padding: 0 13px;
+    padding: 0 12px;
     background-color: transparent;
     color: @foreground;
 	font-size: 14px;
@@ -106,7 +106,7 @@ button:hover {
 #mpd {
     padding: 3px 15px;
     color: rgb(220, 220, 220);;
-    font-size: 13px;
+    font-size: 12px
 }
 
 #window,
@@ -202,7 +202,7 @@ label:focus {
 }
 
 #network.disconnected {
-    background-color: mix(@background, red, 0.3);
+    background-color: mix(@color4, black, 0.3);
 }
 
 #pulseaudio {
