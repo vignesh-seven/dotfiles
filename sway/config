@@ -177,6 +177,19 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+#
+# Waydroid keymapping
+#
+
+# # hit home button
+# bindsym f2 exec adb shell input keyevent 3
+# bindsym f3 exec adb shell input tap 1300 600
+#
+
+
+
+
+
 # outline of the windows
 default_border pixel 2
 default_floating_border pixel 1
@@ -187,7 +200,7 @@ gaps inner 8px
 # exec_always swaymsg gaps inner all set 8px
 # exec_always swaymsg gaps inner all set 20
 
-
+# exec waydroid session start
 
 # set wallpaper
 # exec "/home/vin/.config/sway/set-wallpaper.sh"
@@ -208,6 +221,16 @@ for_window [app_id="Waydroid"] floating enable
 
 # turn on/off display 
 bindsym $mod+f9 exec wlr-randr --output eDP-1 --toggle
+
+# volume adjustment shortcuts
+bindsym XF86AudioRaiseVolume exec pulsemixer --change-volume +5
+bindsym XF86AudioLowerVolume exec pulsemixer --change-volume -5
+bindsym XF86AudioMute exec pulsemixer --toggle-mute
+
+# brightness adjustment shortcuts
+bindsym $mod+period exec brightnessctl set +5%
+bindsym $mod+comma exec brightnessctl set 5%-
+
 
 #
 # Status Bar:

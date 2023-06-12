@@ -87,6 +87,16 @@ button:hover {
     background-color: mix(@color3, black, 0.3);
 }
 
+label:focus {
+    background-color: #000000;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
 
 #clock,
 #battery,
@@ -103,7 +113,8 @@ button:hover {
 #mode,
 #idle_inhibitor,
 #scratchpad,
-#mpd {
+#mpd,
+#custom-waydroid{
     padding: 3px 15px;
     color: rgb(220, 220, 220);;
     font-size: 12px
@@ -148,26 +159,56 @@ button:hover {
 	margin-left: 0;
 }
 
-#clock {
-    background-color: mix(@color9, black, 0.3);
+
+
+
+
+#network {
+    background-color: mix(@color6, black, 0.3);
+}
+
+#network.disconnected {
+    background-color: mix(@color6, black, 0.3);
+}
+
+#pulseaudio {
+    background-color: mix(@color3, black, 0.3);
+    
+}
+
+#pulseaudio.muted {
+    background-color: mix(@color3, black, 0.7);
+    
+}
+
+#backlight {
+    background-color: mix(@color2, black, 0.3);
+}
+
+#custom-waydroid {
+  background-color: mix(@color1, black, 0.3);
+}
+
+
+
+
+
+#cpu {
+    background-color: mix(@color1, black, 0.3);
+    
+}
+
+#memory {
+    background-color: mix(@color2, black, 0.3);
 }
 
 #battery {
-    background-color: mix(@color6, black, 0.3);
-    
-    
+    background-color: mix(@color3, black, 0.3);
 }
 
 #battery.charging, #battery.plugged {
     
-    background-color: mix(@color6, black, 0.5);
-}
-
-@keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: #000000;
-    }
+    background-color: mix(@color4, black, 0.5);
 }
 
 #battery.critical:not(.charging) {
@@ -180,59 +221,12 @@ button:hover {
     animation-direction: alternate;
 }
 
-label:focus {
-    background-color: #000000;
+#clock {
+    background-color: mix(@color6, black, 0.3);
 }
-
-#cpu {
-    background-color: mix(@color1, black, 0.3);
-    
-}
-
-#memory {
-    background-color: mix(@color2, black, 0.3);
-}
-
-#backlight {
-    background-color: mix(@color3, black, 0.3);
-}
-
-#network {
-    background-color: mix(@color4, black, 0.3);
-}
-
-#network.disconnected {
-    background-color: mix(@color4, black, 0.3);
-}
-
-#pulseaudio {
-    background-color: mix(@color5, black, 0.3);
-    
-}
-
-#pulseaudio.muted {
-    background-color: mix(@color5, black, 0.7);
-    
-}
-
-
-#custom-media {
-    background-color: #66cc99;
-    color: #2a5c45;
-    min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-    background-color: #66cc99;
-}
-
-#custom-media.custom-vlc {
-    background-color: #ffa000;
-}
-
 
 #tray {
-    background-color: #2980b9;
+    background-color: mix(@color5, black, 0.3);
 }
 
 #tray > .passive {
@@ -244,20 +238,42 @@ label:focus {
     background-color: #eb4d4b;
 }
 
-#mpd {
-    background-color: #66cc99;
-    color: #2a5c45;
-}
 
-#mpd.disconnected {
-    background-color: #f53c3c;
-}
 
-#mpd.stopped {
-    background-color: #90b1b1;
-}
 
-#mpd.paused {
-    background-color: #51a37a;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
