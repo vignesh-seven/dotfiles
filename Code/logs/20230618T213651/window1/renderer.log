@@ -1,5 +1,0 @@
-2023-06-18 21:36:59.192 [info] [perf] Render performance baseline is 141ms
-2023-06-18 21:44:16.986 [error] spawn xterm ENOENT: Error: spawn xterm ENOENT
-    at ChildProcess._handle.onexit (node:internal/child_process:285:19)
-    at onErrorNT (node:internal/child_process:506:16)
-    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
