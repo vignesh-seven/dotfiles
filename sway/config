@@ -24,7 +24,12 @@ set $right l
 # Your preferred terminal emulator
 set $term kitty
 
+# autostart firefox 
+workspace 1
+exec firefox
+
 set $wallpaper /home/vin/wallpapers/eva.jpg
+
 exec_always wal -i $wallpaper -e
 
 # set mako colors
@@ -230,6 +235,7 @@ bindsym XF86AudioMute exec pulsemixer --toggle-mute
 # brightness adjustment shortcuts
 bindsym $mod+period exec brightnessctl set +5%
 bindsym $mod+comma exec brightnessctl set 5%-
+# bindsym $mod+slash exec pulsemixer
 
 
 #

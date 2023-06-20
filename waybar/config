@@ -94,7 +94,8 @@
         "format": "  {}%",
         "format-alt": "RAM: {percentage}%  |  Swap: {swapPercentage}%",
         "tooltip-format": "RAM: {used:0.1f}/{total:0.1f}G ({percentage}%)\nSwap: {swapUsed:0.1f}/{swapTotal:0.1f}G ({swapPercentage}%)"
-    }, 
+    },
+    
     "battery": {
         "states": {
             // "good": 95,

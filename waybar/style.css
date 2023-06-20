@@ -84,7 +84,7 @@ button:hover {
 }
 
 #workspaces button.urgent {
-    background-color: mix(@color3, black, 0.3);
+    background-color: mix(@color6, black, 0.3);
 }
 
 label:focus {

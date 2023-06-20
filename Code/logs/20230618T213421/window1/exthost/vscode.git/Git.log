@@ -1,0 +1,37 @@
+2023-06-18 21:34:23.936 [info] Log level: Info
+2023-06-18 21:34:23.937 [info] Validating found git in: "git"
+2023-06-18 21:34:23.937 [info] Using git "2.41.0" from "git"
+2023-06-18 21:35:15.922 [info] Log level: Info
+2023-06-18 21:35:15.922 [info] Validating found git in: "git"
+2023-06-18 21:35:15.922 [info] Using git "2.41.0" from "git"
+2023-06-18 21:35:15.922 [info] > git rev-parse --show-toplevel [3ms]
+2023-06-18 21:35:15.923 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2023-06-18 21:35:15.932 [info] Open repository: /home/vin/projects/imageEdit
+2023-06-18 21:35:15.944 [info] > git rev-parse --show-toplevel [6ms]
+2023-06-18 21:35:15.951 [info] > git rev-parse --show-toplevel [2ms]
+2023-06-18 21:35:15.957 [info] > git config --get commit.template [13ms]
+2023-06-18 21:35:15.958 [info] > git rev-parse --show-toplevel [2ms]
+2023-06-18 21:35:15.968 [info] > git rev-parse --show-toplevel [7ms]
+2023-06-18 21:35:15.973 [info] > git rev-parse --show-toplevel [1ms]
+2023-06-18 21:35:15.974 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [8ms]
+2023-06-18 21:35:15.982 [info] > git status -z -uall [3ms]
+2023-06-18 21:35:15.994 [info] > git config --get commit.template [1ms]
+2023-06-18 21:35:16.000 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2023-06-18 21:35:16.007 [info] > git status -z -uall [3ms]
+2023-06-18 21:35:16.461 [info] > git check-ignore -v -z --stdin [3ms]
+2023-06-18 21:35:30.793 [info] > git show --textconv :next.config.js [6ms]
+2023-06-18 21:35:30.794 [info] > git ls-files --stage -- /home/vin/projects/imageEdit/next.config.js [2ms]
+2023-06-18 21:35:30.802 [info] > git cat-file -s a843cbee09afaadbf9c8dd1477dcccf7eb56af50 [3ms]
+2023-06-18 21:35:31.285 [info] > git show --textconv :package-lock.json [15ms]
+2023-06-18 21:35:31.285 [info] > git ls-files --stage -- /home/vin/projects/imageEdit/package-lock.json [3ms]
+2023-06-18 21:35:31.294 [info] > git cat-file -s 9caeb66d1d4bd68028e8b976dd9c2936565f92c1 [3ms]
+2023-06-18 21:35:31.574 [info] > git show --textconv :.eslintrc.json [5ms]
+2023-06-18 21:35:31.575 [info] > git ls-files --stage -- /home/vin/projects/imageEdit/.eslintrc.json [1ms]
+2023-06-18 21:35:31.582 [info] > git cat-file -s bffb357a7122523ec94045523758c4b825b448ef [1ms]
+2023-06-18 21:35:32.599 [info] > git check-ignore -v -z --stdin [1ms]
+2023-06-18 21:35:33.169 [info] > git show --textconv :pages/_app.js [7ms]
+2023-06-18 21:35:33.171 [info] > git ls-files --stage -- /home/vin/projects/imageEdit/pages/_app.js [2ms]
+2023-06-18 21:35:33.177 [info] > git cat-file -s 92e7eb1b90b1e19ab182dcde7ee4c9c9dcf45ff0 [1ms]
+2023-06-18 21:35:33.639 [info] > git show --textconv :pages/_document.js [8ms]
+2023-06-18 21:35:33.639 [info] > git ls-files --stage -- /home/vin/projects/imageEdit/pages/_document.js [1ms]
+2023-06-18 21:35:33.645 [info] > git cat-file -s 54e8bf3e2a29015a45e11cdc279e06b459890d8b [1ms]

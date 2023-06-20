@@ -1,0 +1,203 @@
+13:30:26.211: Platform: Wayland
+13:30:26.211: CPU Name: AMD Ryzen 5 5500U with Radeon Graphics
+13:30:26.211: CPU Speed: 1504.414MHz
+13:30:26.211: Physical Cores: 6, Logical Cores: 12
+13:30:26.211: Physical Memory: 5771MB Total, 1576MB Free
+13:30:26.211: Kernel Version: Linux 6.3.7-zen1-1-zen
+13:30:26.211: Distribution: "Arch Linux" Unknown
+13:30:26.211: Desktop Environment: 
+13:30:26.211: Session Type: wayland
+13:30:26.213: Qt Version: 6.5.1 (runtime), 6.5.1 (compiled)
+13:30:26.213: Portable mode: false
+13:30:26.261: OBS 29.1.1-2 (linux)
+13:30:26.261: ---------------------------------
+13:30:26.262: ---------------------------------
+13:30:26.262: audio settings reset:
+13:30:26.262: 	samples per sec: 48000
+13:30:26.262: 	speakers:        2
+13:30:26.262: 	max buffering:   960 milliseconds
+13:30:26.262: 	buffering type:  dynamically increasing
+13:30:26.264: ---------------------------------
+13:30:26.264: Initializing OpenGL...
+13:30:26.264: Using EGL/Wayland
+13:30:26.302: Initialized EGL 1.5
+13:30:26.319: Loading up OpenGL on adapter AMD AMD Radeon Graphics (renoir, LLVM 15.0.7, DRM 3.52, 6.3.7-zen1-1-zen)
+13:30:26.319: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 23.1.2, shading language 4.60
+13:30:26.354: ---------------------------------
+13:30:26.354: video settings reset:
+13:30:26.354: 	base resolution:   1920x1080
+13:30:26.354: 	output resolution: 1280x720
+13:30:26.354: 	downscale filter:  Bicubic
+13:30:26.354: 	fps:               60/1
+13:30:26.354: 	format:            NV12
+13:30:26.354: 	YUV mode:          Rec. 709/Partial
+13:30:26.354: NV12 texture support not available
+13:30:26.354: P010 texture support not available
+13:30:26.360: Audio monitoring device:
+13:30:26.360: 	name: Default
+13:30:26.360: 	id: default
+13:30:26.360: ---------------------------------
+13:30:26.369: Failed to load 'en-US' text for module: 'decklink-captions.so'
+13:30:26.378: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+13:30:26.386: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+13:30:26.386: Failed to initialize module 'decklink.so'
+13:30:26.526: [pipewire] No captures available
+13:30:26.576: VAAPI: Failed to initialize display in vaapi_device_h264_supported
+13:30:26.576: FFmpeg VAAPI H264 encoding not supported
+13:30:26.576: VAAPI: Failed to initialize display in vaapi_device_hevc_supported
+13:30:26.576: FFmpeg VAAPI HEVC encoding not supported
+13:30:26.588: os_dlopen(/usr//lib/obs-plugins/obs-libfdk.so->/usr//lib/obs-plugins/obs-libfdk.so): libfdk-aac.so.2: cannot open shared object file: No such file or directory
+13:30:26.588: 
+13:30:26.592: os_dlopen(/usr//lib/obs-plugins/obs-libfdk.so->/usr//lib/obs-plugins/obs-libfdk.so): libfdk-aac.so.2: cannot open shared object file: No such file or directory
+13:30:26.592: 
+13:30:26.592: Module '/usr//lib/obs-plugins/obs-libfdk.so' not loaded
+13:30:26.652: ---------------------------------
+13:30:26.652:   Loaded Modules:
+13:30:26.652:     wlrobs.so
+13:30:26.652:     text-freetype2.so
+13:30:26.652:     rtmp-services.so
+13:30:26.652:     obs-x264.so
+13:30:26.652:     obs-vst.so
+13:30:26.652:     obs-transitions.so
+13:30:26.652:     obs-outputs.so
+13:30:26.652:     obs-filters.so
+13:30:26.652:     obs-ffmpeg.so
+13:30:26.652:     linux-v4l2.so
+13:30:26.652:     linux-pulseaudio.so
+13:30:26.652:     linux-pipewire.so
+13:30:26.652:     linux-jack.so
+13:30:26.652:     linux-capture.so
+13:30:26.652:     linux-alsa.so
+13:30:26.652:     image-source.so
+13:30:26.652:     frontend-tools.so
+13:30:26.652:     decklink-output-ui.so
+13:30:26.652:     decklink-captions.so
+13:30:26.652: ---------------------------------
+13:30:26.653: ==== Startup complete ===============================================
+13:30:26.689: All scene data cleared
+13:30:26.689: ------------------------------------------------
+13:30:26.696: pulse-input: Server name: 'pulseaudio 16.1'
+13:30:26.696: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+13:30:26.697: pulse-input: Started recording from 'alsa_output.pci-0000_03_00.6.analog-stereo.monitor' (default)
+13:30:26.697: [Loaded global audio device]: 'Desktop Audio'
+13:30:26.697: pulse-input: Server name: 'pulseaudio 16.1'
+13:30:26.697: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+13:30:26.697: pulse-input: Started recording from 'alsa_input.pci-0000_03_00.6.analog-stereo' (default)
+13:30:26.697: [Loaded global audio device]: 'Mic/Aux'
+13:30:26.698: Switched to scene 'Scene'
+13:30:26.698: ------------------------------------------------
+13:30:26.698: Loaded scenes:
+13:30:26.698: - scene 'Scene':
+13:30:26.698: ------------------------------------------------
+13:30:45.237: User added source 'Wayland output(scpy)' (wlrobs-scpy) to scene 'Scene'
+13:31:05.445: User added source 'Wayland output(dmabuf)' (wlrobs-dmabuf) to scene 'Scene'
+13:31:15.735: User Removed source 'Wayland output(dmabuf)' (wlrobs-dmabuf) from scene 'Scene'
+13:31:58.124: Settings changed (outputs)
+13:31:58.124: ------------------------------------------------
+13:32:04.582: ---------------------------------
+13:32:04.582: [x264 encoder: 'advanced_video_recording'] preset: veryfast
+13:32:04.583: [x264 encoder: 'advanced_video_recording'] settings:
+13:32:04.583: 	rate_control: CBR
+13:32:04.583: 	bitrate:      4000
+13:32:04.583: 	buffer size:  4000
+13:32:04.583: 	crf:          23
+13:32:04.583: 	fps_num:      60
+13:32:04.583: 	fps_den:      1
+13:32:04.583: 	width:        1280
+13:32:04.583: 	height:       720
+13:32:04.583: 	keyint:       250
+13:32:04.583: 
+13:32:04.593: ---------------------------------
+13:32:04.594: [FFmpeg aac encoder: 'Track1'] bitrate: 160, channels: 2, channel_layout: stereo
+13:32:04.594: 
+13:32:04.613: ==== Recording Start ===============================================
+13:32:04.613: [ffmpeg muxer: 'adv_file_output'] Writing file '/home/vin/recordings/2023-06-13_13-32-04.mp4'...
+13:32:14.985: [ffmpeg muxer: 'adv_file_output'] Output of file '/home/vin/recordings/2023-06-13_13-32-04.mp4' stopped
+13:32:14.985: Output 'adv_file_output': stopping
+13:32:14.985: Output 'adv_file_output': Total frames output: 589
+13:32:14.985: Output 'adv_file_output': Total drawn frames: 622
+13:32:14.985: ==== Recording Stop ================================================
+13:34:56.359: Settings changed (outputs)
+13:34:56.359: ------------------------------------------------
+13:34:59.608: ---------------------------------
+13:34:59.608: [x264 encoder: 'advanced_video_recording'] preset: veryfast
+13:34:59.608: [x264 encoder: 'advanced_video_recording'] settings:
+13:34:59.608: 	rate_control: CBR
+13:34:59.608: 	bitrate:      4000
+13:34:59.608: 	buffer size:  4000
+13:34:59.608: 	crf:          23
+13:34:59.608: 	fps_num:      60
+13:34:59.608: 	fps_den:      1
+13:34:59.608: 	width:        1280
+13:34:59.608: 	height:       720
+13:34:59.608: 	keyint:       250
+13:34:59.608: 
+13:34:59.623: ---------------------------------
+13:34:59.623: [FFmpeg aac encoder: 'Track1'] bitrate: 160, channels: 2, channel_layout: stereo
+13:34:59.623: 
+13:34:59.627: ==== Recording Start ===============================================
+13:34:59.627: [ffmpeg muxer: 'adv_file_output'] Writing file '/home/vin/recordings/2023-06-13_13-34-59.mp4'...
+13:35:12.300: [ffmpeg muxer: 'adv_file_output'] Output of file '/home/vin/recordings/2023-06-13_13-34-59.mp4' stopped
+13:35:12.300: Output 'adv_file_output': stopping
+13:35:12.300: Output 'adv_file_output': Total frames output: 727
+13:35:12.300: Output 'adv_file_output': Total drawn frames: 760
+13:35:12.300: ==== Recording Stop ================================================
+13:35:36.377: Switched to Preview/Program mode
+13:35:36.382: ------------------------------------------------
+13:35:37.673: Switched to scene 'Scene'
+13:35:37.722: Switched to regular Preview mode
+13:35:37.722: ------------------------------------------------
+13:36:24.237: Settings changed (outputs)
+13:36:24.237: ------------------------------------------------
+13:37:06.640: Settings changed (general)
+13:37:06.640: ------------------------------------------------
+13:37:09.444: ---------------------------------
+13:37:09.444: [x264 encoder: 'advanced_video_recording'] preset: veryfast
+13:37:09.444: [x264 encoder: 'advanced_video_recording'] settings:
+13:37:09.444: 	rate_control: CBR
+13:37:09.444: 	bitrate:      6000
+13:37:09.444: 	buffer size:  6000
+13:37:09.444: 	crf:          23
+13:37:09.444: 	fps_num:      60
+13:37:09.444: 	fps_den:      1
+13:37:09.444: 	width:        1280
+13:37:09.444: 	height:       720
+13:37:09.444: 	keyint:       250
+13:37:09.444: 
+13:37:09.452: ---------------------------------
+13:37:09.452: [FFmpeg aac encoder: 'Track1'] bitrate: 160, channels: 2, channel_layout: stereo
+13:37:09.452: 
+13:37:09.458: ==== Recording Start ===============================================
+13:37:09.458: [ffmpeg muxer: 'adv_file_output'] Writing file '/home/vin/recordings/2023-06-13_13-37-09.mkv'...
+13:37:16.829: [ffmpeg muxer: 'adv_file_output'] Output of file '/home/vin/recordings/2023-06-13_13-37-09.mkv' stopped
+13:37:16.829: Output 'adv_file_output': stopping
+13:37:16.829: Output 'adv_file_output': Total frames output: 410
+13:37:16.829: Output 'adv_file_output': Total drawn frames: 442 (443 attempted)
+13:37:16.829: Output 'adv_file_output': Number of lagged frames due to rendering lag/stalls: 1 (0.2%)
+13:37:16.830: ==== Recording Stop ================================================
+13:38:07.100: ---------------------------------
+13:38:07.100: [x264 encoder: 'advanced_video_recording'] preset: veryfast
+13:38:07.100: [x264 encoder: 'advanced_video_recording'] settings:
+13:38:07.100: 	rate_control: CBR
+13:38:07.100: 	bitrate:      6000
+13:38:07.100: 	buffer size:  6000
+13:38:07.100: 	crf:          23
+13:38:07.100: 	fps_num:      60
+13:38:07.100: 	fps_den:      1
+13:38:07.100: 	width:        1280
+13:38:07.100: 	height:       720
+13:38:07.100: 	keyint:       250
+13:38:07.100: 
+13:38:07.110: ---------------------------------
+13:38:07.110: [FFmpeg aac encoder: 'Track1'] bitrate: 160, channels: 2, channel_layout: stereo
+13:38:07.110: 
+13:38:07.122: ==== Recording Start ===============================================
+13:38:07.122: [ffmpeg muxer: 'adv_file_output'] Writing file '/home/vin/recordings/2023-06-13_13-38-07.mkv'...
+13:38:13.458: [ffmpeg muxer: 'adv_file_output'] Output of file '/home/vin/recordings/2023-06-13_13-38-07.mkv' stopped
+13:38:13.458: Output 'adv_file_output': stopping
+13:38:13.458: Output 'adv_file_output': Total frames output: 347
+13:38:13.458: Output 'adv_file_output': Total drawn frames: 380
+13:38:13.459: ==== Recording Stop ================================================
+13:41:10.376: signal_handler_connect: signal 'file_changed' not found
+13:41:10.376: Settings changed (outputs)
+13:41:10.376: ------------------------------------------------

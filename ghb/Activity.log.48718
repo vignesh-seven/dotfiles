@@ -1,0 +1,7 @@
+[21:36:45] gtkgui: HandBrake 1.6.1 (2023021700) - Linux x86_64 - https://handbrake.fr
+[21:36:45] Compile-time hardening features are enabled
+[21:36:45] qsv: not available on this system
+Cannot load libnvidia-encode.so.1
+[21:36:45] hb_init: starting libhb thread
+[21:36:45] hb_init: starting libhb thread
+[21:36:45] hb_init: starting libhb thread
