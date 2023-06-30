@@ -48,14 +48,12 @@ set $menu exec rofi -show drun
 # output * bg ~/.config/wallpapers/selena_fhd.png fill
 
 ### Input configuration
-   input "10248:257:MSFT0001:00_2808:0101_Touchpad" {
+   input type:touchpad {
        dwt enabled
        tap enabled
        natural_scroll disabled
        middle_emulation enabled
-   }
-#
-# You can get the names of your inputs by running: swaymsg -t get_inputs
+  }
 
 ### Key bindings
 #
@@ -197,7 +195,7 @@ bindsym $mod+r mode "resize"
 
 # outline of the windows
 default_border pixel 2
-default_floating_border pixel 1
+default_floating_border pixel 2
 
 # gaps
 gaps inner 8px
@@ -223,6 +221,10 @@ include "$HOME/.cache/wal/colors-sway"
 for_window [app_id="pavucontrol"] floating enable
 for_window [app_id="system-config-printer"] floating enable
 for_window [app_id="Waydroid"] floating enable
+for_window [app_id="eu.qtfm"] {
+  floating enable
+  resize set width 900
+} 
 
 # turn on/off display 
 bindsym $mod+f9 exec wlr-randr --output eDP-1 --toggle

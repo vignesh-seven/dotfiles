@@ -8,17 +8,17 @@
 <VirtualBox xmlns="http://www.virtualbox.org/" version="1.12-linux">
   <Global>
     <ExtraData>
-      <ExtraDataItem name="GUI/LastItemSelected" value="m=036a99a8-9a46-4937-aa7b-632d11a3d5bd"/>
+      <ExtraDataItem name="GUI/LastItemSelected" value="m=36718541-bfac-4360-986a-d189eb2e4e81"/>
       <ExtraDataItem name="GUI/LastWindowPosition" value="10,44,944,1026,max"/>
       <ExtraDataItem name="GUI/MediumSelector/DialogGeometry" value="724,172,472,769"/>
       <ExtraDataItem name="GUI/RecentFolderCD" value="/home/vin/Downloads"/>
-      <ExtraDataItem name="GUI/RecentListCD" value="/home/vin/Downloads/ubuntu-23.04-live-server-amd64.iso"/>
+      <ExtraDataItem name="GUI/RecentListCD" value="/home/vin/Downloads/debian-12.0.0-amd64-netinst.iso,/home/vin/Downloads/ubuntu-23.04-live-server-amd64.iso"/>
       <ExtraDataItem name="GUI/SuppressMessages" value="confirmInputCapture"/>
       <ExtraDataItem name="GUI/Tools/LastItemsSelected" value="Welcome,Details"/>
     </ExtraData>
     <MachineRegistry>
-      <MachineEntry uuid="{475fdca3-6afa-4929-9fe1-c9889ea7c6cf}" src="/home/vin/VirtualBox VMs/ubuntu-server-2/ubuntu-server-2.vbox"/>
       <MachineEntry uuid="{036a99a8-9a46-4937-aa7b-632d11a3d5bd}" src="/home/vin/VirtualBox VMs/ubuntu-install/ubuntu-install.vbox"/>
+      <MachineEntry uuid="{36718541-bfac-4360-986a-d189eb2e4e81}" src="/home/vin/VirtualBox VMs/Debian-install/Debian-install.vbox"/>
     </MachineRegistry>
     <NetserviceRegistry>
       <DHCPServers>

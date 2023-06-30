@@ -1,26 +1,26 @@
-00:00:00.239685 VirtualBox GUI VM Selector Window 7.0.8 r156879 linux.amd64 (Apr 18 2023 21:49:14) release log
-00:00:00.239688 Log opened 2023-06-20T17:00:38.792762000Z
-00:00:00.239689 Build Type: release
-00:00:00.239692 OS Product: Linux
-00:00:00.239694 OS Release: 6.3.8-zen1-1-zen
-00:00:00.239696 OS Version: #1 ZEN SMP PREEMPT_DYNAMIC Wed, 14 Jun 2023 20:10:15 +0000
-00:00:00.239719 DMI Product Name: 82KU
-00:00:00.239726 DMI Product Version: IdeaPad 3 15ALC6 Ub
-00:00:00.239730 Firmware type: UEFI
-00:00:00.240004 Secure Boot: Disabled
-00:00:00.240039 Host RAM: 5771MB (5.6GB) total, 4627MB (4.5GB) available
-00:00:00.240043 Executable: /usr/lib/virtualbox/VirtualBox
-00:00:00.240044 Process ID: 37896
-00:00:00.240046 Package type: LINUX_64BITS_GENERIC (OSE)
-00:00:00.240075 Qt version: 5.15.10
-00:00:00.240558 GUI: UIMediumEnumerator: Initial medium-enumeration finished!
-00:00:00.251169 GUI: UIMediumEnumerator: Medium-enumeration started...
-00:00:00.703458 GUI: UIMediumEnumerator: Medium-enumeration finished!
-00:00:00.727855 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 10x44 x 944x1026
-00:00:47.815348 GUI: UIMediumEnumerator: Medium with key={{90ce67a5-bd8e-4b1b-8d43-31791b5244b5}} created
-00:00:47.888021 GUI: UIMediumEnumerator: Medium-enumeration finished!
-00:00:51.175793 GUI: UIMediumEnumerator: Medium-enumeration finished!
-00:13:36.429837 GUI: UIMediumEnumerator: Medium-enumeration finished!
-00:14:00.130865 GUI: UIMediumEnumerator: Medium-enumeration finished!
-00:14:02.748289 GUI: UICommon: Handling aboutToQuit request..
-00:14:03.567089 GUI: UICommon: aboutToQuit request handled!
+00:00:00.468115 VirtualBox GUI VM Selector Window 7.0.8 r156879 linux.amd64 (Apr 18 2023 21:49:14) release log
+00:00:00.468120 Log opened 2023-06-21T07:20:38.929659000Z
+00:00:00.468122 Build Type: release
+00:00:00.468126 OS Product: Linux
+00:00:00.468129 OS Release: 6.3.8-zen1-1-zen
+00:00:00.468132 OS Version: #1 ZEN SMP PREEMPT_DYNAMIC Wed, 14 Jun 2023 20:10:15 +0000
+00:00:00.468164 DMI Product Name: 82KU
+00:00:00.468177 DMI Product Version: IdeaPad 3 15ALC6 Ub
+00:00:00.468189 Firmware type: UEFI
+00:00:00.468554 Secure Boot: Disabled
+00:00:00.468603 Host RAM: 5771MB (5.6GB) total, 4330MB (4.2GB) available
+00:00:00.468608 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.468610 Process ID: 3185
+00:00:00.468612 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.468652 Qt version: 5.15.10
+00:00:00.470052 GUI: UIMediumEnumerator: Initial medium-enumeration finished!
+00:00:00.480524 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:00.929726 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:00.952697 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 10x44 x 944x1026
+00:00:40.773648 GUI: UIMediumEnumerator: Medium with key={{552d0770-2862-4ca9-a4ce-2321e5d934e3}} created
+00:00:40.839169 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:43.803341 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:01:15.729885 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:01:21.875773 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:11:02.735988 GUI: UICommon: Handling aboutToQuit request..
+00:11:03.465620 GUI: UICommon: aboutToQuit request handled!
