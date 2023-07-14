@@ -1,0 +1,109 @@
+* {
+  font-weight: 500;
+}
+
+a:link,
+a[href*="./"],
+a[href*="?tab="],
+a[href*="&tab="] {
+  filter: invert(100%) !important;
+  -webkit-filter: invert(100%) !important;
+}
+
+#docs-editor canvas {
+  opacity: 1 !important;
+  filter: invert(0) hue-rotate(180deg) contrast(85%) !important;
+  -webkit-filter: invert(0) hue-rotate(180deg) contrast(85%) !important;
+}
+
+div image,
+a[class] img {
+  filter: invert(0) !important;
+  -webkit-filter: invert(0) !important;
+}
+
+.NNKXjd,
+.eL01fe,
+.gb_vc .gb_4c,
+.docs-icon-img,
+.grid-container,
+.freebirdThemedTab,
+.apps-share-sprite,
+.docs-branding-icon,
+.freebirdHeaderCard,
+.docs-branding-icon-img,
+.docs-sheet-tab-dropdown,
+.docs-promo-action-container,
+.docs-material-button-content,
+.goog-menu .docs-homescreen-img,
+.goog-toolbar-menu-button-label,
+.docs-homescreen-grid-metadata-row,
+.goog-toolbar-menu-button-dropdown,
+.docs-gm .docs-rotationhandle-stick, 
+.docs-gm .waffle-obj-drag-component,
+.docs-gm .docs-rotationhandle-circle, 
+.docs-gm .docs-rotationhandle-outline, 
+.appsMaterialWizButtonPaperbuttonFilled,
+.docs-gm .docs-squarehandleselectionbox-handle, 
+.docs-gm .docs-squarehandleselectionbox-border, 
+.docs-gm .docs-roundedcornerselectionbox-border,
+.docs-homescreen-img.docs-homescreen-fab-googlecolors-24,
+.jfk-bubble.jfk-bubble-promo.docs-promo-bubble.docs-save-indicator-promo {
+  filter: invert(100%) !important;
+  -webkit-filter: invert(100%) !important;
+}
+
+.filmstrip {
+  filter: invert(100%) !important;
+  background-color: #070605 !important;
+  -webkit-filter: invert(100%) !important;
+}
+
+a[href*="?tab="] span,
+a[href*="&tab="] span {
+  color: rgba(177, 177, 177, 0.87) !important;
+}
+
+div[class*="-button-action"] {
+  background-color: #999999 !important;
+}
+
+div[class*="-button-action"] {
+  border-color: #666666 !important;
+  background-image: none !important;
+}
+
+#speakernotes {
+  background: #c5c5c5 !important;
+}
+
+#docs-editor-container,
+#docs-titlebar-share-client-button .jfk-button {
+  filter: invert(100%) !important;
+  -webkit-filter: invert(100%) !important;
+}
+
+.docs-gm #docs-titlebar-share-client-button .jfk-button {
+  color: black !important;
+  font-weight: 600 !important;
+  filter: invert(0) !important;
+  background-color: #ff9400d4 !important;
+}
+
+.docs-gm #filmstrip-controls, 
+.punch-filmstrip-visibility-toggle-icon-container {
+  background-color: #070605 !important;
+}
+
+.docs-gm .docs-sheet-tab,
+.docs-gm .grid-bottom-bar {
+  background-color: #1d1d1d !important;
+}
+
+.hh2c6 {background: #262626 !important}
+.NNKXjd {background-color: #262626 !important}
+.docs-explore-widget {background: #5a5a5a !important}
+.docs-homescreen-fcc-content {background-color: #d2d2d2 !important}
+.freebirdHeaderMastWithOverlay {background-color: rgb(205, 205, 205) !important}
+.quantumWizDialogBackground {background-color: rgba(232, 232, 232, 0.5) !important}
+.outline-refresh .location-indicator-highlight.navigation-item {color: rgb(188 130 24) !important}

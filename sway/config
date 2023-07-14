@@ -28,7 +28,7 @@ set $term kitty
 workspace 1
 exec firefox
 
-set $wallpaper /home/vin/wallpapers/eva.jpg
+set $wallpaper /home/vin/wallpapers/night.jpg
 
 exec_always wal -i $wallpaper -e
 
@@ -198,7 +198,7 @@ default_border pixel 2
 default_floating_border pixel 2
 
 # gaps
-gaps inner 8px
+# gaps inner 8px
 # gaps outer 20px
 # exec_always swaymsg gaps inner all set 8px
 # exec_always swaymsg gaps inner all set 20

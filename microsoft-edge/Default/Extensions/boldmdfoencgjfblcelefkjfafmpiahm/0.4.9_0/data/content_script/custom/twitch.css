@@ -1,0 +1,68 @@
+.hero,
+.elZcx,
+.footer,
+.hxwSwq,
+.hTTohL,
+.fMIGgJ,
+.gdKXDc,
+.gRbxbd,
+.cnwXwd,
+.lldfdH,
+.kfOuIF,
+.gCePyT,
+.bAGwnI,
+.dxyVIj,
+.bNuSxQ,
+.side-nav,
+.subscribe-cta,
+.nav__container,
+.consent-banner,
+.subscribe-footer,
+.side-nav-page-info,
+.side-nav-card__avatar,
+.ScWrapper-sc-1wvuch4-0,
+.anon-front__featured-section,
+.chat-line__username-container,
+.channel-root+.persistent-player {
+  filter: invert(100%) !important;
+  -webkit-filter: invert(100%) !important;
+}
+
+div[data-test-selector='tw-card-title'],
+footer[id='twilight-sticky-footer-root'],
+div[data-test-selector='test_selector_prime_tracking_button_wrapper'] {
+  filter: invert(100%) !important;
+  -webkit-filter: invert(100%) !important;
+}
+
+.featured-content-carousel {
+  filter: invert(0) !important;
+  -webkit-filter: invert(0) !important;
+}
+
+.tw-input,
+.side-bar-contents,
+.prime-offers.tw-relative,
+.tw-core-button--secondary,
+.pl-age-restriction-overlay,
+.tw-core-button--secondary.tw-core-button--disabled {
+  background: #c7c7c7 !important;
+}
+
+.modal__backdrop,
+.tw-root--theme-dark .modal__backdrop,
+.tw-root--theme-light .modal__backdrop {
+  background-color: rgb(159 159 159 / 85%) !important;
+}
+
+.tw-root--theme-light .side-nav {
+  background-color: #383838 !important;
+}
+
+.tw-root--theme-light .carousel-player-nav-arrow__container {
+  background-color: #818181 !important;
+}
+
+.hUInuk {
+  background-color: #848484 !important;
+}

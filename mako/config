@@ -16,6 +16,6 @@ default-timeout=5000
 ignore-timeout=1
 
 
-background-color=#55255EC8
-text-color=#b8c4c7
-border-color=#030110EE
+background-color=#3B6778C8
+text-color=#a9e1dd
+border-color=#0e0e12EE

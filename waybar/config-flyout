@@ -1,0 +1,205 @@
+{
+    "id": "flyout",
+    // "layer": "top", // Waybar at top layer
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    // "height": 34, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 0, // Gaps between modules (4px)
+    // "fixed-center": false,
+    "mode": "hide",
+    // Choose the order of the modules
+
+    "modules-left": ["network", "pulseaudio"],
+    //"modules-center": ["sway/workspaces"],
+    "modules-right": [ "cpu", "memory", "battery", "clock"],
+
+    // Modules configuration
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "on-click-right": "exec ~/.config/rofi/rofi-wifi-menu.sh",
+        "format-wifi": "  {essid}" ,
+        "tooltip-format": " {bandwidthDownBytes}  |   {bandwidthUpBytes}",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "No WiFi",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "network#2": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        //"on-click-right": "exec ~/.config/rofi/rofi-wifi-menu.sh",
+        "format-wifi": " {bandwidthDownBytes}  |   {bandwidthUpBytes}",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": " ",
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon}  {volume}% ",
+        //"format": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "tooltip": false,
+        "on-click": "pulseaudio-control togmute",
+        "on-click-right": "pavucontrol"
+        
+    },
+    "backlight": {
+        // "device": "amdgpu_bl0",
+        // "exec":"~/.config/waybar/brightnessctl.sh"
+        "format": "{icon} {percent}%",
+        "format-icons": [" "],
+		    "on-scroll-up": "exec brightnessctl set +5%",
+		    "on-scroll-down": "exec brightnessctl set 5%-",
+        "tooltip": false
+    },
+    "custom/waydroid": {
+        "exec": "$HOME/.config/waybar/waydroid_status.sh",
+        "format": "  {}",
+        "tooltip": false,
+        "interval": 2
+    },
+
+
+
+
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{icon}",
+        "format-icons": {
+        	"1": "",
+        	"2": "",
+        	"3": "",
+            "urgent": "",
+            "focused": "",
+            "default": "",
+            //"focused": "A",
+            //"default": "A"
+        }
+    },
+    "cpu": {
+        "format": "  {usage}%",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "  {}%",
+        "format-alt": "RAM: {percentage}%  |  Swap: {swapPercentage}%",
+        "tooltip-format": "RAM: {used:0.1f}/{total:0.1f}G ({percentage}%)\nSwap: {swapUsed:0.1f}/{swapTotal:0.1f}G ({swapPercentage}%)"
+    },
+    
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}  {capacity}%",
+        "format-charging": "  {capacity}%",
+        "format-plugged": "  {capacity}%",
+        "format-alt": "{icon} {time}  |  {power}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "clock": {
+        // "timezone": "America/New_York",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    "sway/window": {
+        "format": "{title}",
+        "max-length": 50
+    },
+    "mpd": {
+        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
+        "format-disconnected": "Disconnected ",
+        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+        "unknown-tag": "N/A",
+        "interval": 2,
+        "consume-icons": {
+            "on": " "
+        },
+        "random-icons": {
+            "off": "<span color=\"#f53c3c\"></span> ",
+            "on": " "
+        },
+        "repeat-icons": {
+            "on": " "
+        },
+        "single-icons": {
+            "on": "1 "
+        },
+        "state-icons": {
+            "paused": "",
+            "playing": ""
+        },
+        "tooltip-format": "MPD (connected)",
+        "tooltip-format-disconnected": "MPD (disconnected)"
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+
+        
+   
+    "custom/media": {
+        "format": "{icon} {}",
+        "return-type": "json",
+        "max-length": 40,
+        "format-icons": {
+            "spotify": "",
+            "default": "🎜"
+        },
+        "escape": true,
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    }
+}
+
+
