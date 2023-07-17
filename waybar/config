@@ -63,6 +63,8 @@
     },
     "custom/waydroid": {
         "exec": "$HOME/.config/waybar/waydroid_status.sh",
+        "on-click-right": "waydroid session stop",
+        "on-click": "waydroid show-full-ui",
         "format": "  {}",
         "tooltip": false,
         "interval": 2
