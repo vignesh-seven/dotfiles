@@ -64,7 +64,7 @@
     "custom/waydroid": {
         "exec": "$HOME/.config/waybar/waydroid_status.sh",
         "on-click-right": "waydroid session stop",
-        "on-click": "waydroid show-full-ui",
+        "on-double-click": "waydroid show-full-ui",
         "format": "  {}",
         "tooltip": false,
         "interval": 2
@@ -104,6 +104,7 @@
             "warning": 30,
             "critical": 15
         },
+        "interval": 15,
         "format": "{icon}  {capacity}%",
         "format-charging": "  {capacity}%",
         "format-plugged": "  {capacity}%",
@@ -116,7 +117,7 @@
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format": "{:%I:%M %p}",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "{:%A, %B  %d-%m-%Y}"
     },
     "tray": {
         // "icon-size": 21,
