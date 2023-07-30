@@ -82,7 +82,7 @@
         	"2": "",
         	"3": "",
             "urgent": "",
-            "focused": "",
+            //"focused": "",
             "default": "",
             //"focused": "A",
             //"default": "A"
