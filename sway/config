@@ -62,6 +62,9 @@ set $menu exec rofi -show drun
     # Start a terminal
     bindsym $mod+Return exec $term
 
+    # Start Firefox 
+    bindsym $mod+Shift+f exec firefox
+
     # Kill focused window
     bindsym $mod+Shift+q kill
 

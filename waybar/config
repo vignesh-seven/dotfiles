@@ -8,9 +8,9 @@
     //"mode": "overlay",
     // Choose the order of the modules
 
-    "modules-left": ["network", "pulseaudio", "backlight", "custom/waydroid"],
-    "modules-center": ["sway/workspaces"],
-    "modules-right": [ "cpu", "memory", "battery", "clock", "tray"],
+    "modules-left": ["sway/workspaces", ],
+    "modules-center": [ ],
+    "modules-right": [ "custom/waydroid", "cpu", "memory", "battery", "pulseaudio", "backlight", "network", "clock", "tray"],
 
     // Modules configuration
     "network": {
@@ -104,7 +104,7 @@
             "warning": 30,
             "critical": 15
         },
-        "interval": 15,
+        "interval": 5,
         "format": "{icon}  {capacity}%",
         "format-charging": "  {capacity}%",
         "format-plugged": "  {capacity}%",

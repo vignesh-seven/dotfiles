@@ -174,12 +174,12 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: mix(@color3, black, 0.3);
+    background-color: mix(@color1, black, 0.3);
     
 }
 
 #pulseaudio.muted {
-    background-color: mix(@color3, black, 0.7);
+    background-color: mix(@color1, black, 0.7);
     
 }
 
@@ -224,7 +224,7 @@ label:focus {
 }
 
 #clock {
-    background-color: mix(@color6, black, 0.3);
+    background-color: mix(@color5, black, 0.3);
 }
 
 #tray {
